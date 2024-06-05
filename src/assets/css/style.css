@@ -658,6 +658,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   margin-top: 60px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .inline {
   display: inline;
 }
@@ -694,6 +698,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   height: 2.5rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .max-h-lvh {
   max-height: 100lvh;
 }
@@ -724,6 +732,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .max-w-\[80\%\] {
@@ -842,6 +854,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   border-radius: 9999px;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -910,6 +926,11 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   padding-bottom: 120px;
 }
 
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -932,6 +953,11 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -1012,4 +1038,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
 .text-purple-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(67 24 255 / var(--tw-text-opacity));
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
