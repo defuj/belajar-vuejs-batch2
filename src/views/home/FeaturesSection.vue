@@ -1,15 +1,11 @@
 <script setup lang="ts">
-import { ButtonPrimary, ButtonSecondary } from '@/components/buttons'
 import { Chart, ChevronRight, Mail, User } from '@/components/icons'
 </script>
 
 <template>
-  <ButtonPrimary />
-  <ButtonSecondary />
-
-  <section id="features" class="container">
+  <section id="features">
     <di class="container">
-      <div class="py-[120px] w-full flex-col justify-center items-center">
+      <div class="flex-col items-center justify-center w-full">
         <h1 class="text-3xl font-extrabold leading-[44px] text-center text-dark-grey-900">
           How Horizon works?
         </h1>
@@ -17,7 +13,9 @@ import { Chart, ChevronRight, Mail, User } from '@/components/icons'
           Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum.
         </p>
 
-        <div class="w-full mt-[60px] flex flex-row justify-between items-center space-x-[40px]">
+        <div
+          class="px-container py-container flex-1 mt-[60px] flex flex-row justify-between items-center space-x-[40px]"
+        >
           <div class="flex flex-row justify-between flex-1 space-x-5">
             <div
               class="flex items-center justify-center w-12 h-12 text-base font-bold leading-8 text-center text-white rounded-full bg-purple-blue-500"
@@ -67,8 +65,8 @@ import { Chart, ChevronRight, Mail, User } from '@/components/icons'
       </div>
     </di>
 
-    <div>
-      <div class="py-[120px] w-full flex-col justify-center items-center">
+    <div class="container">
+      <div class="flex-col items-center justify-center w-full">
         <div class="w-full mt-[60px] flex flex-row justify-between items-center">
           <div class="flex flex-col items-center flex-1 py-6 px-9">
             <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-purple-blue-500">
