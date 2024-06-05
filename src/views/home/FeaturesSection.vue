@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import { ButtonPrimary, ButtonSecondary } from '@/components/buttons'
 import { Chart, ChevronRight, Mail, User } from '@/components/icons'
 </script>
 
 <template>
+  <ButtonPrimary />
+  <ButtonSecondary />
+
   <section id="features" class="container">
     <di class="container">
       <div class="py-[120px] w-full flex-col justify-center items-center">

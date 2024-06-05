@@ -1,8 +1,12 @@
+<script setup lang="ts">
+import { Logo } from '@/assets/images'
+</script>
+
 <template>
   <header>
     <div class="container grid items-center justify-center w-full grid-cols-3 py-6">
       <div class="flex items-center justify-start">
-        <img class="w-[156px]" src="@/assets/images/logo.png" alt="logo" />
+        <img class="w-[156px]" :src="Logo" alt="logo" />
       </div>
       <div class="flex flex-row items-center justify-center menu">
         <nav class="space-x-12">
