@@ -793,6 +793,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   width: 100%;
 }
 
+.w-\[165px\] {
+  width: 165px;
+}
+
 .max-w-\[60\%\] {
   max-width: 60%;
 }
@@ -913,6 +917,18 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1017,6 +1033,11 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.\!py-20 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
 }
 
 .text-center {
