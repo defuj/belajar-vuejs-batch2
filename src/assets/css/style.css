@@ -654,6 +654,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   margin-right: 0.75rem;
 }
 
+.mt-\[60px\] {
+  margin-top: 60px;
+}
+
 .inline {
   display: inline;
 }
@@ -682,6 +686,14 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   height: 80%;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .max-h-lvh {
   max-height: 100lvh;
 }
@@ -706,6 +718,14 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   width: 80%;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
 .max-w-\[80\%\] {
   max-width: 80%;
 }
@@ -716,6 +736,14 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
 
 .max-w-\[60\%\] {
   max-width: 60%;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-2 {
@@ -754,6 +782,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-24 {
   gap: 6rem;
 }
@@ -782,6 +814,18 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-\[40px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(40px * var(--tw-space-x-reverse));
+  margin-left: calc(40px * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -794,8 +838,21 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   border-radius: 0.75rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-purple-blue-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(67 24 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#E9E3FF\] {
@@ -950,4 +1007,9 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
 .text-dark-grey-900 {
   --tw-text-opacity: 1;
   color: rgb(27 37 89 / var(--tw-text-opacity));
+}
+
+.text-purple-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(67 24 255 / var(--tw-text-opacity));
 }
