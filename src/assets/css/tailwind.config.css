@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  header {
+    @apply fixed top-0 left-0 right-0 bg-white;
+  }
+  main {
+    @apply pt-24;
+  }
+  .menu > nav > a {
+    @apply text-sm font-normal text-black leading-6;
+  }
+  header .actions {
+    @apply flex justify-end items-center space-x-6;
+  }
+
+  .container {
+    @apply px-4 md:px-[150px] max-w-full;
+  }
+}
