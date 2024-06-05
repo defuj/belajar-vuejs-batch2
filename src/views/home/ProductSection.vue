@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { Moon, Phone } from '@/components/icons'
+</script>
+
 <template>
   <section id="product" class="container max-h-lvh">
     <div class="grid w-full grid-cols-2 gap-24">
