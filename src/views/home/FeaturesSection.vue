@@ -14,7 +14,7 @@ import { Chart, ChevronRight, Mail, User } from '@/components/icons'
         </p>
 
         <div
-          class="px-container py-container flex-1 mt-[60px] flex flex-row justify-between items-center space-x-[40px]"
+          class="px-container py-container flex-1 flex flex-row justify-between items-center space-x-[40px]"
         >
           <div class="flex flex-row justify-between flex-1 space-x-5">
             <div

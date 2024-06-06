@@ -697,24 +697,24 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
 }
 
 .mt-\[60px\] {
   margin-top: 60px;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-\[74px\] {
   margin-top: 74px;
-}
-
-.mt-9 {
-  margin-top: 2.25rem;
 }
 
 .inline-block {
@@ -785,6 +785,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   width: 156px;
 }
 
+.w-\[165px\] {
+  width: 165px;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -793,20 +797,16 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   width: 100%;
 }
 
-.w-\[165px\] {
-  width: 165px;
-}
-
 .max-w-\[60\%\] {
   max-width: 60%;
 }
 
-.max-w-\[80\%\] {
-  max-width: 80%;
-}
-
 .max-w-\[600px\] {
   max-width: 600px;
+}
+
+.max-w-\[80\%\] {
+  max-width: 80%;
 }
 
 .flex-1 {
@@ -875,6 +875,12 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
        column-gap: 1.25rem;
 }
 
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
@@ -885,6 +891,12 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -911,22 +923,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-x-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -971,6 +971,11 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   background-color: rgb(233 227 255 / var(--tw-bg-opacity));
 }
 
+.bg-grey-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 248 253 / var(--tw-bg-opacity));
+}
+
 .bg-purple-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(67 24 255 / var(--tw-bg-opacity));
@@ -981,13 +986,13 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-grey-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(246 248 253 / var(--tw-bg-opacity));
-}
-
 .p-8 {
   padding: 2rem;
+}
+
+.\!py-20 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
 }
 
 .px-3 {
@@ -1003,6 +1008,11 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .px-9 {
@@ -1028,16 +1038,6 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.\!py-20 {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
 }
 
 .text-center {
@@ -1069,14 +1069,14 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   line-height: 1.5rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xs {
@@ -1112,6 +1112,10 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   line-height: 2rem;
 }
 
+.leading-9 {
+  line-height: 2.25rem;
+}
+
 .leading-\[44px\] {
   line-height: 44px;
 }
@@ -1120,12 +1124,13 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
   line-height: 60px;
 }
 
-.leading-9 {
-  line-height: 2.25rem;
-}
-
 .tracking-\[3\.08px\] {
   letter-spacing: 3.08px;
+}
+
+.text-\[\#68769F\] {
+  --tw-text-opacity: 1;
+  color: rgb(104 118 159 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -1156,11 +1161,6 @@ header .actions > :not([hidden]) ~ :not([hidden]) {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#68769F\] {
-  --tw-text-opacity: 1;
-  color: rgb(104 118 159 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
