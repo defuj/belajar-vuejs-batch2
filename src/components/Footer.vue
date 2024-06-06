@@ -1,6 +1,37 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { Facebook, Twitter, Github, Linkedin, Instagram } from '@/components/icons'
+
+const menus = [
+  {
+    name: 'About',
+    path: '/about'
+  },
+  {
+    name: 'Features',
+    path: '/features'
+  },
+  {
+    name: 'Blog',
+    path: '/blog'
+  },
+  {
+    name: 'Resources',
+    path: '/resources'
+  },
+  {
+    name: 'Partners',
+    path: '/partmers'
+  },
+  {
+    name: 'Help',
+    path: '/help'
+  },
+  {
+    name: 'Terms',
+    path: '/terms'
+  }
+]
 </script>
 <template>
   <footer>
@@ -11,32 +42,12 @@ import { Facebook, Twitter, Github, Linkedin, Instagram } from '@/components/ico
 
           <div class="flex flex-col items-center justify-center space-y-6">
             <nav class="flex flex-row space-x-10">
-              <RouterLink to="/about" class="font-medium leading-6 text-dark-grey-600 texx-sm">
-                About
-              </RouterLink>
-
-              <RouterLink to="/features" class="font-medium leading-6 text-dark-grey-600 texx-sm">
-                Features
-              </RouterLink>
-
-              <RouterLink to="/blog" class="font-medium leading-6 text-dark-grey-600 texx-sm">
-                Blog
-              </RouterLink>
-
-              <RouterLink to="/resources" class="font-medium leading-6 text-dark-grey-600 texx-sm">
-                Resources
-              </RouterLink>
-
-              <RouterLink to="/partners" class="font-medium leading-6 text-dark-grey-600 texx-sm">
-                Partners
-              </RouterLink>
-
-              <RouterLink to="/help" class="font-medium leading-6 text-dark-grey-600 texx-sm">
-                Help
-              </RouterLink>
-
-              <RouterLink to="/terms" class="font-medium leading-6 text-dark-grey-600 texx-sm">
-                Terms
+              <RouterLink
+                v-for="menu in menus"
+                :to="menu.path"
+                class="font-medium leading-6 text-dark-grey-600 texx-sm"
+              >
+                {{ menu.name }}
               </RouterLink>
             </nav>
 
