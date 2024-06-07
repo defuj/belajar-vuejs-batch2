@@ -1,6 +1,22 @@
 <script setup>
 import { Avatar1 } from '@/assets/images'
+import { Testimoni } from '@/components'
 import { ButtonPrimary } from '@/components/buttons'
+
+const testimonis = [
+  {
+    desc: 'A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming.',
+    name: 'Tiana Schleifer',
+    job: 'CEO & Founder',
+    image: Avatar1
+  },
+  {
+    desc: 'A must needed kit for every single software arhitect. It makes your coding life easier and your final product will be blooming.',
+    name: 'Tiana Schleifer',
+    job: 'CEO & Founder',
+    image: Avatar1
+  }
+]
 </script>
 
 <template>
@@ -16,35 +32,13 @@ import { ButtonPrimary } from '@/components/buttons'
       </p>
 
       <div class="mt-[74px] grid grid-cols-2 gap-x-5">
-        <article class="flex flex-col items-center justify-center p-8 bg-grey-200 rounded-2xl">
-          <h1 class="font-bold leading-8 text-center text-dark-grey-900">
-            “A must needed kit for every single software arhitect. It makes your coding life easier
-            and your final product will be blooming.”
-          </h1>
-
-          <div class="w-10 h-10 overflow-hidden rounded-full mt-9">
-            <img :src="Avatar1" alt="" />
-          </div>
-          <h1 class="mt-4 text-lg font-extrabold leading-8 text-center text-dark-grey-900">
-            Tiana Schleifer
-          </h1>
-          <p class="text-xs font-medium text-center text-dark-grey-600">CEO & Founder</p>
-        </article>
-
-        <article class="flex flex-col items-center justify-center p-8 bg-grey-200 rounded-2xl">
-          <h1 class="font-bold leading-8 text-center text-dark-grey-900">
-            “A must needed kit for every single software arhitect. It makes your coding life easier
-            and your final product will be blooming.”
-          </h1>
-
-          <div class="w-10 h-10 overflow-hidden rounded-full mt-9">
-            <img :src="Avatar1" alt="" />
-          </div>
-          <h1 class="mt-4 text-lg font-extrabold leading-8 text-center text-dark-grey-900">
-            Tiana Schleifer
-          </h1>
-          <p class="text-xs font-medium text-center text-dark-grey-600">CEO & Founder</p>
-        </article>
+        <Testimoni
+          v-for="testimoni in testimonis"
+          :desc="testimoni.desc"
+          :name="testimoni.name"
+          :job="testimoni.job"
+          :image="testimoni.image"
+        />
       </div>
     </div>
   </section>
